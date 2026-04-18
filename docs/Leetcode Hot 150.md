@@ -300,7 +300,7 @@ private void quickSort(int[] nums, int lo, int hi) {
 			if (nums[cur] < pivot) {
 				swap(nums, cur++, lt++);
 			} else if (nums[cur] > pivot) {
-				swap(nums, gt, cur--);
+				swap(nums, cur, gt--);
 			} else {
 				cur++;
 			}
